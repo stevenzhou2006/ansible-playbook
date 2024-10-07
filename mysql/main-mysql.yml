@@ -1,7 +1,7 @@
 # Install MySQL Server Nodes
 
-- hosts: 192.168.66.203
-  user: mysql
+- hosts: [Test]
+  user: steven
   become: no
   become_user: root
   become_method: su
