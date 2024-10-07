@@ -1,6 +1,6 @@
 # Install MySQL Server Nodes
 
-- hosts: 10.1.207.180
+- hosts: 192.168.66.203
   user: mysql
   become: no
   become_user: root
@@ -12,26 +12,3 @@
     - include_tasks: task_mysql_config.yml
     - include_tasks: task_mysql_init.yml
 
-- hosts: 10.1.207.181
-  user: mysql
-  become: no
-  become_user: root
-  become_method: su
-  tasks:
-    - include_tasks: task_mysql_pre_checks.yml
-    - include_tasks: task_mysql_os.yml
-    - include_tasks: task_mysql_upload.yml
-    - include_tasks: task_mysql_config.yml
-    - include_tasks: task_mysql_init.yml
-
-- hosts: 10.1.207.182
-  user: mysql
-  become: no
-  become_user: root
-  become_method: su
-  tasks:
-    - include_tasks: task_mysql_pre_checks.yml
-    - include_tasks: task_mysql_os.yml
-    - include_tasks: task_mysql_upload.yml
-    - include_tasks: task_mysql_config.yml
-    - include_tasks: task_mysql_init.yml
