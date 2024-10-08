@@ -3,12 +3,12 @@
 
 # install linux package
 - name: install packages
-  yum:
+  apt:
     name:
       - xz
       - rsync
       - wget
-      - yum-utils
+    #  - yum-utils
     state: present
   check_mode: no
   become: true
