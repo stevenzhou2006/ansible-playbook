@@ -1,10 +1,10 @@
 # Install MySQL Server Nodes
 
 - hosts: [Homelab]
-  user: devops
-  become: no
-  become_user: root
-  become_method: su
+  #user: devops
+  #become: no
+  #become_user: root
+  #become_method: su
   tasks:
     - include_tasks: task_mysql_pre_checks.yml
     - include_tasks: task_mysql_os.yml
