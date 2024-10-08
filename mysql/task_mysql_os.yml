@@ -11,7 +11,7 @@
       - yum-utils
     state: present
   check_mode: no
-  become: yes
+  become: true
 
 # configuring Linux limits
 - name: Add or modify hard nofile limits
