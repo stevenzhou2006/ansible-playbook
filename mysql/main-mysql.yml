@@ -2,7 +2,7 @@
 
 - hosts: [Test]
   user: semaphore
-  become: yes
+  become: true
   become_user: root
   become_method: su
   tasks:
