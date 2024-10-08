@@ -1,7 +1,7 @@
 # Install MySQL Server Nodes
 
-- hosts: [Test]
-  user: mysql
+- hosts: [Homelab]
+  user: devops
   become: no
   become_user: root
   become_method: su
